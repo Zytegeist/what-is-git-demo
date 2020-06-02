@@ -12,9 +12,3 @@ https://git-scm.com/downloads
 $ git config --global user.name "Rick Sanchez"
 $ git config --global user.email RickSanchez@plumbus.com
 ```
-
-### Step Three: Git init
-cd into a project directory and type the following command to create a new git repository.
-```
-$ git init
-```
