@@ -29,19 +29,12 @@ Best practices is to add a jira ticket number with this commit, but since there 
 $ git commit -m"JIRA-001: Adding 01-git-initialize.html to the repo"
 ```
 
-### Step Four: Add the git repo to remote repository and push your code up to the remote.
+### Step Four: Add the branch to your origin repository and push your code up to the remote.
 ```
-$ git remote add origin https://github.com/<your_github_username>/what-is-git-demo.git
-$ git push -u origin master
-```
-
-### Step Five: Create a pull request
-```
-$ git remote add origin https://github.com/<your_github_username>/what-is-git-demo.git
-$ git push -u origin master
+$ git push origin origin master
 ```
 
-#### Step Six: Create a PR
+#### Step Five: Create a PR
 Go to your github repo \
 and click create a PR. \
 Review your code changes \
