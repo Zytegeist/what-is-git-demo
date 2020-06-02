@@ -100,5 +100,5 @@ Current branch JIRA-005-merge-conflict is up to date.
 
 ### Step Seven: Push back to origin
 ```
-git push origin 
+git push origin --all
 ```
