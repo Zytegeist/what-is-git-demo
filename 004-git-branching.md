@@ -23,3 +23,19 @@ $ git push origin JIRA-001-y<our-name>-create-branch
 ```
 $ git push upstream JIRA-001-<your-name>-create-branch
 ```
+
+## Step Four: Create another branch
+You always want to start your branches from the main branch. In this case it is master. In most cases that will be develop. \
+* Notice when we checkout out a branch that already exists we do not need the `-b` argument, but when we want to create a new branch we use the `-b` command.
+
+```
+$ git checkout master
+$ git checkout -b JIRA-004-my-new-branch
+```
+
+## Step Five: Delete your second branch
+The purpose of this step is to understand how to delete a branch. 
+```
+$ git checkout master
+$ git branch -D JIRA-004-my-new-branch
+```
