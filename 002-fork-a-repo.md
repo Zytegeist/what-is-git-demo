@@ -15,7 +15,7 @@ and in the top-right corner of the page, click Fork.
 ## Step Three: Clone your forked repository
 Clone your forked repository. By default, Git names this "origin" on your local 
 ```
-$ git clone https://github.com/<your-github-username>/what-is-git-demo
+$ git clone git@github.com/<your-github-username>/what-is-git-demo
 ```
 
 ## Step Four: Add an upstream 
