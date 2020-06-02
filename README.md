@@ -1,6 +1,11 @@
+# Understanding GIT 
+The purpose of these exercises is to get hands on experience for common git commands and methodology.   
+
 ### Commit Messages Guidelines
 Always include the issue number in your commit message. Ex: "JIRA-104: Moved install profile to be under /profiles rather than /profiles/custom." \
-Optionally include additional information in your commit message if your commit makes multiple changes to the codebase. Example: SCC-104: Moved install profile to be under /profiles rather than /profiles/custom. Added the module security_review Added new install profile configuration option "feature-set"
+Optionally include additional information in your commit message if your commit makes multiple changes to the codebase.
+Example: JIRA-104: Moved install profile to be under /profiles rather than /profiles/custom. \
+Added the module security_review Added new install profile configuration option "feature-set"
 
 #### Pull Request Guidelines
 Always include a link to the issue  in the PR comments Always review your PR for merge conflicts and fix those. \
