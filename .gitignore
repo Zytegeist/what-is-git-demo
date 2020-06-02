@@ -1,0 +1,7 @@
+# ------------
+# - Ignore JetBrains
+# ------------
+
+.idea/
+.idea_modules/
+*.iws
