@@ -16,11 +16,11 @@ $ git branch -a
 
 ### Step Three: Check out the remote branch
 You always want to start your branches from the main branch. In this case it is master. In most cases that will be develop. \
-* Notice when we checkout out master we do not need the `-b` argument, but when we checkout a new branch we must use `-b`. 
+* Notice when we checkout out a branch that already exists we do not need the `-b` argument.
 
 ```
 $ git checkout master
-$ git checkout -b JIRA-005-merge-conflict
+$ git checkout JIRA-005-merge-conflict
 ```
 Navigate and review the changes to the 005-git-merge-conflict-md file. 
 
