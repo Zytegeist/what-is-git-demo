@@ -45,7 +45,7 @@ $ git commit -m"JIRA-001: Adding 001-<your-name>-git-initialize.md to the repo."
 $ git push origin JIRA-004-<your-name>-new-file
 ```
 
-#### Step Six: Create a PR
+### Step Six: Create a PR
 Go to your github repo \
 and click create a PR. \
 Review your code changes \

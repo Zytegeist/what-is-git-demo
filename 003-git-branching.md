@@ -41,7 +41,7 @@ $ git branch -D JIRA-004-my-new-branch
 ```
 
 
-## Step Six: Review 
+### Step Six: Review 
 You should have only one new branch locally. 
 The git branch command will show you your local branches 
 ```

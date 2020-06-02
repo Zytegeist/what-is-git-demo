@@ -101,7 +101,7 @@ Current branch JIRA-005-merge-conflict is up to date.
 ```
 
 
-#### Step Six: Create a PR
+### Step Seven: Create a PR
 Go to your github repo \
 and click create a PR. \
 Review your code changes \

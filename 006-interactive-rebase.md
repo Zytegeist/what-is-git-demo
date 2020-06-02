@@ -4,7 +4,7 @@
 
 With git-rebase you can push local commits together into one commit (without force). \
 With rebase, you can commit more often and then merge your commits together before pushing back to the shared repo. \
-For simplicity, we are only going to talk about rebasing locally.
+For the purpose of thi exercise, we are only going to talk about rebasing locally.
 
 --- 
 As a developer I want to be able to change my git commit message so that I can have a semantic git log history. 
