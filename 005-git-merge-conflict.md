@@ -55,32 +55,30 @@ You should see something along the lines
  
  ```
 
-## Step Five: Review your merge conflicts 
+### Step Five: Review your merge conflicts 
 ```
-<<<<<<< Updated upstream
-=======
 <<<<<<< HEAD
-The purpose of this file is only to demonstrate a git merge conflict. Edit number two from the JIRA-005-merge-conflict-two branch.
+The purpose of this file is only to demonstrate a git merge conflict. On branch JIRA-005-merge-conflict this file was updated.
 =======
-The purpose of this file is only to demonstrate a git merge conflict. I am going to edit this file to cause a merge conflict.
->>>>>>> JIRA-005: Adding text to later cause a merge conflict.
+The purpose of this file is only to demonstrate a git merge conflict. On branch JIRA-005-merge-conflict-two this file was also updated.
+>>>>>>> JIRA-005: Merge conflict exercise part two.
+
 ```
+You can think of the HEAD as the "current branch". When you switch branches with git checkout. \
+The HEAD revision changes to point to the tip of the new branch.
 
-You can think of the HEAD as the "current branch". When you switch branches with git checkout, \
-the HEAD revision changes to point to the tip of the new branch.
-
-## Step Six: Fix your conflicts
+### Step Six: Fix your conflicts
 Review what changes you need to make. Git will only ever know that changes occurred. \
 It is up to the developer to determine what needs to stay or be removed. \
-For the purposes of this demo we are going to say the commit from ` JIRA-005: Adding text to later cause a merge conflict.` \
+For the purposes of this demo we are going to say the commit from ` JIRA-005: Merge conflict exercise part two.` \
 Is the most current code changes that we want to keep. \ 
 
-Therefore, remove everything between `<<<<<<< HEAD and =======`.  Also remove the git message `>>>>>>> JIRA-005: Adding text to later cause a merge conflict.` \
+Therefore, remove everything between `<<<<<<< HEAD and =======`.  Also remove the git message `>>>>>>> JIRA-005: Merge conflict exercise part two.` \
 Go back to your terminal and type 
 ```
 $ git status
 ```
-
+Notice there are changes to the 005b-git-merge-conflict.md file.\
 Add and commit these changes. 
 ```
 $ git add . 
@@ -90,7 +88,7 @@ $ git rebase --continue
 
 Try to rebase again 
 ```
-$ git rebase upstream/JIRA-005-merge-conflict-two
+$ git rebase JIRA-005-merge-conflict-two
 ```
 
 You should see a message along the lines of 
@@ -99,3 +97,8 @@ You should see a message along the lines of
 Current branch JIRA-005-merge-conflict is up to date.   
 ```
 
+
+### Step Seven: Push back to origin
+```
+git push origin 
+```
