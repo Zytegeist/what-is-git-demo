@@ -21,8 +21,8 @@ $ git branch -a
 To work on our changes locally, check out the remote branch `JIRA-005-merge-conflict`. Then checkout the branch `JIRA-005-merge-conflict-two`
 
 ```
-$ git checkout JIRA-005-merge-conflict
-$ git checkout JIRA-005-merge-conflict-two
+$ git checkout  -b JIRA-005-merge-conflict origin/JIRA-005-merge-conflict
+$ git checkout  -b JIRA-005-merge-conflict-two origin/JIRA-005-merge-conflict-two
 ```
 
 ### Step Four: Rebase your two branches. 
