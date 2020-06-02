@@ -1,5 +1,5 @@
 ### Commit Messages Guidelines
-Always include the issue number in your commit message. Ex: "SCC-104: Moved install profile to be under /profiles rather than /profiles/custom." \
+Always include the issue number in your commit message. Ex: "JIRA-104: Moved install profile to be under /profiles rather than /profiles/custom." \
 Optionally include additional information in your commit message if your commit makes multiple changes to the codebase. Example: SCC-104: Moved install profile to be under /profiles rather than /profiles/custom. Added the module security_review Added new install profile configuration option "feature-set"
 
 #### Pull Request Guidelines
