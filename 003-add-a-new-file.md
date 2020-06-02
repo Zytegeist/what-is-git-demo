@@ -26,7 +26,7 @@ $ git add 001-<your-name>-git-initialize.md
 ### Step Three: Create a commit message to tell the git repo of your changes. 
 Best practices is to add a jira ticket number with this commit, but since there is not attached to a jira project for this demo we will a dummy Jira ticket number to this commit message.
 ```
-$ git commit -m"JIRA-001: Adding 01-git-initialize.html to the repo"
+$ git commit -m"JIRA-001: Adding 001-<your-name>-git-initialize.md to the repo"
 ```
 
 ### Step Four: Add the branch to your origin repository and push your code up to the remote.
