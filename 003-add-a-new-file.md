@@ -7,10 +7,10 @@ Create a new file with your name. For example, 001-allie-git-initialize.md.
 Use git status to see what changes have been made to the repo.
 
 ```
-$ nano 001-allie-git-initialize.md
+$ nano 001-<your-name>-git-initialize.md
 ```
 Add the text hello world. \
-command x and y to save.  \
+control x and y to save.  \
 Run git status to see your new file. 
 
 ```
@@ -26,18 +26,18 @@ $ git add 001-<your-name>-git-initialize.md
 ### Step Three: Create a commit message to tell the git repo of your changes. 
 Best practices is to add a jira ticket number with this commit, but since there is not attached to a jira project for this demo we will a dummy Jira ticket number to this commit message.
 ```
-$ git commit -m"JIRA-001: Adding 001-<your-name>-git-initialize.md to the repo"
+$ git commit -m"JIRA-001: Adding 001-<your-name>-git-initialize.md to the repo."
 ```
 
 ### Step Four: Add the branch to your origin repository and push your code up to the remote.
 ```
-$ git push origin origin master
+$ git push origin master
 ```
 
 #### Step Five: Create a PR
 Go to your github repo \
 and click create a PR. \
 Review your code changes \
-Review the base branch is dev-assessment-exercises \
+Review the base branch is AllieRays:master \
 Create a PR \
 Review [github's documentation about pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) if you need more help with creating a PR.

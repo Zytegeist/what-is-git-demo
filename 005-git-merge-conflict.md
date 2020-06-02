@@ -14,21 +14,29 @@ $ git fetch --all
 $ git branch -a
 ```
 
-### Step Three: Check out the remote branch
-You always want to start your branches from the main branch. In this case it is master. In most cases that will be develop. \
-* Notice when we checkout out a branch that already exists we do not need the `-b` argument.
+### Step Three: Check out the remote feature branch
+To work on our changes locally, check out the remote branch `JIRA-005-merge-conflict`. Then checkout the branch `JIRA-005-merge-conflict-two`
 
 ```
-$ git checkout master
 $ git checkout JIRA-005-merge-conflict
+$ git checkout JIRA-005-merge-conflict-two
 ```
-Navigate and review the changes to the 005-git-merge-conflict-md file. 
+
+### Step Four: Rebase your two branches. 
+Since it will be common that other developers on your team will be working on the same code we always want to rebase from the latest. 
+In this case we will use the two branches provided in this repo. `JIRA-005-merge-conflict` and `JIRA-005-merge-conflict-two`. 
+```
+$ git rebase JIRA-005-merge-conflict-two/JIRA-005-merge-conflict
+```
+
+
+
 
 ## Step Four: Rebase your branch with the master branch.
 Once we have checked out the JIRA-005-merge-conflict we will want to try and rebase the branch with the master branch. \
-Rebasing replays changes from one line of work onto another in the order they were introduced, whereas merging takes the endpoints and merges them together. \
+Rebasing replays changes from one line of work onto another in the order they were introduced, whereas merging takes the endpoints and merges them together.
 ```
-$ git rebase upstream/develop
+$ git rebase upstream/master
 ```
 
 ## Step Five: Review your merge conflicts 
@@ -47,7 +55,8 @@ the HEAD revision changes to point to the tip of the new branch.
 
 ## Step Six: Fix your conflicts
 Review what changes you need to make. Git will only ever know that changes occurred. \
-It is up to the developer to determine what needs to stay or be removed. For the purposes of this demo we are going to say the commit from ` JIRA-005: Adding text to later cause a merge conflict.` \
+It is up to the developer to determine what needs to stay or be removed. \
+For the purposes of this demo we are going to say the commit from ` JIRA-005: Adding text to later cause a merge conflict.` \
 Is the most current code changes that we want to keep. Therefore we will remove everything between `<<<<<<< HEAD and =======`.  Also remove the git message `>>>>>>> JIRA-005: Adding text to later cause a merge conflict.` \
 Go back to your terminal and type 
 ```
@@ -79,6 +88,9 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 ```
+
+Navigate to your 005-git-merge-conflict.md 
+
 We want to add and commit these changes. 
 ```
 $ git add . 
