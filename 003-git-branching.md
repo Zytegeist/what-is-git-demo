@@ -39,3 +39,17 @@ The purpose of this step is to understand how to delete a branch.
 $ git checkout master
 $ git branch -D JIRA-004-my-new-branch
 ```
+
+
+## Step Six: Review 
+You should have only one new branch locally. 
+The git branch command will show you your local branches 
+```
+$ git branch
+```
+and `git branch -a` will show you all of your local and remote branches
+```
+$ git branch -a 
+```
+
+Nothing to commit and no need to create a pull request. 

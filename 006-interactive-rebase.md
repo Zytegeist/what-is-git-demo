@@ -28,7 +28,7 @@ $ control x
 $ y
 ```
 
-## Step Three: Git add and git commit
+### Step Three: Git add and git commit
 Use `git add -p` to step through your code to see what has changed. 
 ```
 $ git add -p 
@@ -57,7 +57,7 @@ $ git commit -m"My git commit message."
 
 What did we forget? - A jira ticket number and a more semantic git commit message. We will fix this later.
 
-## Step Four: Create a second commit 
+### Step Four: Create a second commit 
 ```
 $ nano 006-interactive-rebase.md
 ```
@@ -69,7 +69,7 @@ $ y
 $ git commit -m"JIRA-006: Adding text to my interactive rebase markdown file." 
 ```
 
-## Step Five: Review and rebase your commits. 
+### Step Five: Review and rebase your commits. 
 Review your last commit messages. 
 ```
 $ git log 
@@ -144,7 +144,7 @@ Use git to push back to your origin.
 $ git push origin JIRA-006-interactive-rebase
 ```
 
-#### Step Six: Create a PR
+### Step Six: Create a PR
 Go to your github repo \
 and click create a PR. \
 Review your code changes \

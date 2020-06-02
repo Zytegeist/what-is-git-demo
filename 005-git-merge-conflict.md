@@ -5,11 +5,14 @@ As a developer I want to manage code conflicts so that I know how to manage my c
 ## Exercise 
 
 ### Step One: Fetch all branches 
+The git fetch command downloads commits, files, and refs from a remote repository into your local repo. \
+You use fetch to see what the rest of your team is working on and to ensure you have all the latest locally. 
 ```
 $ git fetch --all 
 ```
 
 ### Step Two: Review all branches 
+Git branch -a will show you all your local and remote branches.
 ```
 $ git branch -a
 ```
@@ -98,7 +101,10 @@ Current branch JIRA-005-merge-conflict is up to date.
 ```
 
 
-### Step Seven: Push back to origin
-```
-git push origin --all
-```
+#### Step Six: Create a PR
+Go to your github repo \
+and click create a PR. \
+Review your code changes \
+Review the base branch is AllieRays:master \
+Create a PR \
+Review [github's documentation about pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) if you need more help with creating a PR.
